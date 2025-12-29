@@ -1,0 +1,71 @@
+import { motion } from "framer-motion";
+import { Check } from "lucide-react";
+
+const audiencePoints = [
+  "Mentes NeuroDIFERENTES que querem fazer de 2026 o ano da Virada.",
+  "Buscam Leveza, não apenas Produtividade.",
+  "Precisam dominar a Impulsividade.",
+  "Querem Silêncio para Dormir.",
+  "Sabem que têm Potencial.",
+];
+
+const TargetAudienceSection = () => {
+  return (
+    <section className="bg-dark-section py-20 px-4">
+      <div className="container max-w-5xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-5xl font-extrabold text-foreground">
+            Para quem é o{" "}
+            <span className="text-secondary">Desafoga TDAH</span>?
+          </h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {audiencePoints.map((point, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className={`card-light flex items-start gap-4 ${
+                index === audiencePoints.length - 1 ? "md:col-span-2 lg:col-span-1" : ""
+              }`}
+            >
+              <div className="check-icon flex-shrink-0 mt-1">
+                <Check className="w-4 h-4" />
+              </div>
+              <p className="text-card-foreground font-medium leading-relaxed">
+                {point}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="btn-primary animate-zoom-pulse"
+          >
+            FAZER MINHA INSCRIÇÃO
+          </motion.button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default TargetAudienceSection;
