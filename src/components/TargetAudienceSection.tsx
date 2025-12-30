@@ -7,6 +7,7 @@ const audiencePoints = [
   "Precisam dominar a Impulsividade.",
   "Querem Silêncio para Dormir.",
   "Sabem que têm Potencial.",
+  "Vivem a Paralisia da Liberdade: para empreendedores e autônomos que têm flexibilidade, mas travam sem a cobrança externa.",
 ];
 
 const TargetAudienceSection = () => {
