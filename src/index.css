@@ -113,7 +113,7 @@
   }
 
   .bg-dark-section {
-    background: linear-gradient(180deg, hsl(82 32% 10%) 0%, hsl(82 32% 16%) 100%);
+    background-color: hsl(0 0% 0%);
   }
 
   .bg-light-section {
