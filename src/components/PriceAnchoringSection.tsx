@@ -84,33 +84,50 @@ const PriceAnchoringSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="p-6 rounded-2xl bg-primary/10 border-2 border-primary"
+            className="space-y-4"
           >
-            <div className="text-center mb-6">
-              <span className="inline-block px-4 py-2 rounded-full bg-secondary text-accent-foreground font-bold text-sm">
-                CONDIÇÃO ESPECIAL PARA FOUNDER
-              </span>
+            <p className="text-card-foreground/80">
+              <strong className="text-primary">A condição exclusiva de inauguração que nunca mais vai se repetir.</strong>
+            </p>
+            <p className="text-card-foreground/80">
+              Ao entrar hoje, você garante o <strong>LIFETIME PRICE LOCK</strong> (Trava de Preço Vitalícia).
+            </p>
+            <p className="text-card-foreground/80">
+              O Desafoga vai evoluir, o preço público vai subir, mas o seu valor de assinatura nunca mudará.
+            </p>
+            <p className="text-card-foreground/80 font-bold uppercase mt-4">
+              O QUE ESTÁ INCLUSO NO PACOTE FOUNDER:
+            </p>
+            <div className="flex items-start gap-3">
+              <div className="check-icon flex-shrink-0 mt-1">
+                <Check className="w-4 h-4" />
+              </div>
+              <p className="text-card-foreground/80">
+                <strong>Assistente de Alívio 24/7:</strong> fale o caos a qualquer hora e receba ordem imediata.
+              </p>
             </div>
-
-            <h3 className="text-xl font-bold text-card-foreground mb-6 text-center">
-              O que você recebe:
-            </h3>
-
-            <div className="space-y-4 mb-6">
-              {includes.map((item, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
-                    <item.icon className="w-5 h-5 text-secondary" />
-                  </div>
-                  <p className="text-card-foreground font-medium">{item.text}</p>
-                </div>
-              ))}
+            <div className="flex items-start gap-3">
+              <div className="check-icon flex-shrink-0 mt-1">
+                <Check className="w-4 h-4" />
+              </div>
+              <p className="text-card-foreground/80">
+                <strong>O Copiloto de Potencial:</strong> a cada 6 dias, receba seu Raio-X de evolução para garantir que nenhum talento seja desperdiçado.
+              </p>
             </div>
-
-            <div className="text-center p-4 rounded-xl bg-secondary/20">
-              <span className="text-lg font-bold text-primary">+ BÔNUS</span>
-              <p className="text-2xl font-extrabold text-card-foreground">
-                40% OFF
+            <div className="flex items-start gap-3">
+              <div className="check-icon flex-shrink-0 mt-1">
+                <Check className="w-4 h-4" />
+              </div>
+              <p className="text-card-foreground/80">
+                <strong>A Tribo dos Founders:</strong> acesso exclusivo à nossa comunidade secreta onde ninguém solta a mão de ninguém.
+              </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="check-icon flex-shrink-0 mt-1">
+                <Check className="w-4 h-4" />
+              </div>
+              <p className="text-card-foreground/80">
+                <strong>BÔNUS:</strong> 40% de desconto no plano anual à vista.
               </p>
             </div>
           </motion.div>
