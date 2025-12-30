@@ -83,16 +83,20 @@ const EvolutionAssistantSection = () => {
             viewport={{ once: true }}
             className="pt-8"
           >
-            <motion.a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeWh2p5NW3OMSoM8NS-w2jFuADZxr4a-QGB1HVaBbZTGkcbQw/viewform?usp=send_form"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="btn-primary inline-block"
-            >
-              ENTRE PARA A LISTA DE ESPERA
-            </motion.a>
+            <div className="relative inline-block group">
+              {/* Animated border effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-destructive to-primary rounded-xl opacity-75 blur-sm animate-spin-slow" />
+              <motion.a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWh2p5NW3OMSoM8NS-w2jFuADZxr4a-QGB1HVaBbZTGkcbQw/viewform?usp=send_form"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="relative btn-primary inline-block bg-black border border-primary/50"
+              >
+                Entre para a lista de espera
+              </motion.a>
+            </div>
           </motion.div>
         </motion.div>
       </div>
