@@ -3,8 +3,7 @@ import founderBadge from "@/assets/founder-badge.png";
 
 const FounderMovementSection = () => {
   return (
-    <section className="bg-dark-section py-20 px-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+    <section className="bg-black py-20 px-4 relative overflow-hidden">
 
       <div className="container max-w-4xl relative z-10">
         <motion.div
