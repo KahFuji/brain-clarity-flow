@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 const audiencePoints = [
-  "Mentes NeuroDIFERENTES que querem fazer de 2026 o ano da Virada.",
-  "Buscam Leveza, não apenas Produtividade.",
-  "Precisam dominar a Impulsividade.",
-  "Querem Silêncio para Dormir.",
-  "Sabem que têm Potencial.",
-  "Vivem a Paralisia da Liberdade: para empreendedores e autônomos que têm flexibilidade, mas travam sem a cobrança externa.",
+  { text: "Mentes NeuroDIFERENTES que querem fazer de 2026 o ano da Virada." },
+  { text: "Buscam Leveza, não apenas Produtividade." },
+  { text: "Precisam dominar a Impulsividade." },
+  { text: "Querem Silêncio para Dormir." },
+  { text: "Sabem que têm Potencial." },
+  { bold: "Vivem a Paralisia da Liberdade:", text: " para empreendedores e autônomos que têm flexibilidade, mas travam sem a cobrança externa." },
 ];
 
 const TargetAudienceSection = () => {
@@ -43,7 +43,8 @@ const TargetAudienceSection = () => {
                 <Check className="w-4 h-4" />
               </div>
               <p className="text-card-foreground font-medium leading-relaxed">
-                {point}
+                {point.bold && <strong>{point.bold}</strong>}
+                {point.text}
               </p>
             </motion.div>
           ))}
