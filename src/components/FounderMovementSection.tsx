@@ -53,14 +53,33 @@ const FounderMovementSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true }}
-            className="p-6 rounded-2xl bg-muted/30 border border-secondary/30 max-w-2xl mx-auto"
+            className="p-6 rounded-2xl bg-muted/30 border border-secondary/30 max-w-2xl mx-auto text-left space-y-4"
           >
             <p className="text-lg text-foreground">
-              <span className="text-secondary font-bold">
-                Valor de Inauguração Vitalício:
-              </span>{" "}
-              O preço vai subir para novos, mas para você,{" "}
-              <strong className="text-secondary">nunca</strong>.
+              Ser Founder é muito mais do que derrotar o ruído mental.
+            </p>
+            <p className="text-lg text-foreground">
+              É decidir reescrever a própria história e inspirar outros <strong className="text-secondary">neuroDIFERENTES</strong> a viverem o mesmo.
+            </p>
+            <p className="text-lg text-foreground">
+              Ao se tornar um Membro Fundador hoje, você garante:
+            </p>
+            <p className="text-lg text-foreground">
+              <span className="mr-2">🏆</span>
+              <strong className="text-secondary">Valor de Inauguração Vitalício:</strong> o Desafoga TDAH vai evoluir e o preço vai subir para os novos.
+            </p>
+            <p className="text-lg text-foreground">
+              Para você, <strong className="text-secondary">nunca</strong>.
+            </p>
+            <p className="text-lg text-foreground">
+              O valor que você pagar hoje será o mesmo para sempre.
+            </p>
+            <p className="text-lg text-foreground">
+              <span className="mr-2">🏆</span>
+              <strong className="text-secondary">A Tribo dos Founders:</strong> Acesso exclusivo à nossa comunidade secreta.
+            </p>
+            <p className="text-lg text-foreground">
+              Um lugar seguro onde trocamos estratégias reais e onde, de verdade, <strong className="text-secondary">ninguém solta a mão de ninguém</strong>.
             </p>
           </motion.div>
         </motion.div>
