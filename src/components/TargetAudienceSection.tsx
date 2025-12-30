@@ -12,7 +12,7 @@ const audiencePoints = [
 
 const TargetAudienceSection = () => {
   return (
-    <section className="bg-dark-section py-20 px-4">
+    <section className="bg-dark-green-section py-20 px-4">
       <div className="container max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
