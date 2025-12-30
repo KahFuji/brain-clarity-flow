@@ -44,13 +44,16 @@ const FounderHookSection = () => {
               sua voz.
             </p>
 
-            <motion.button
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeWh2p5NW3OMSoM8NS-w2jFuADZxr4a-QGB1HVaBbZTGkcbQw/viewform?usp=send_form"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="btn-primary animate-pulse"
+              className="btn-primary animate-pulse inline-block"
             >
               ENTRE PARA A LISTA DE ESPERA
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </div>
