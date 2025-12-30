@@ -60,7 +60,7 @@ const TargetAudienceSection = () => {
             whileTap={{ scale: 0.98 }}
             className="btn-primary animate-zoom-pulse"
           >
-            FAZER MINHA INSCRIÇÃO
+            ENTRE PARA A LISTA DE ESPERA
           </motion.button>
         </motion.div>
       </div>
