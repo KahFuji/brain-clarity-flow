@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import FounderHookSection from "@/components/FounderHookSection";
 import ProblemSection from "@/components/ProblemSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
+import EvolutionAssistantSection from "@/components/EvolutionAssistantSection";
 import TargetAudienceSection from "@/components/TargetAudienceSection";
 import FounderMovementSection from "@/components/FounderMovementSection";
 import PriceAnchoringSection from "@/components/PriceAnchoringSection";
@@ -28,6 +29,7 @@ const Index = () => {
         <FounderHookSection />
         <ProblemSection />
         <HowItWorksSection />
+        <EvolutionAssistantSection />
         <TargetAudienceSection />
         <FounderMovementSection />
         <PriceAnchoringSection />
