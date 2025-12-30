@@ -94,7 +94,7 @@ const EvolutionAssistantSection = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="relative px-8 py-4 text-lg font-bold rounded-xl bg-black text-foreground inline-block border border-transparent"
+                className="relative px-8 py-4 text-lg font-bold rounded-xl bg-secondary text-secondary-foreground inline-block"
               >
                 Entre para a lista de espera
               </motion.a>
