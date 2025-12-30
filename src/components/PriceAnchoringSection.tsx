@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import { X, Check, Sparkles, Users, Bot } from "lucide-react";
 
 const painCosts = [
-  { text: "Custo financeiro (multas, juros, oportunidades perdidas)", type: "pain" },
-  { text: "Custo social (vergonha, julgamento, isolamento)", type: "pain" },
-  { text: "Custo emocional (frustração, ansiedade, baixa autoestima)", type: "pain" },
+  { label: "O custo financeiro:", text: "juros de boletos esquecidos e multas por atraso." },
+  { label: "O custo social:", text: "a vergonha de furar encontros importantes por esquecimento." },
+  { label: "O custo emocional:", text: "a frustração diária de não gerenciar o básico." },
+  { label: "O custo biológico:", text: "o esgotamento de tentar fazer o cérebro funcionar na força do ódio." },
 ];
 
 const includes = [
@@ -41,9 +42,18 @@ const PriceAnchoringSection = () => {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-bold text-card-foreground mb-6">
-              O preço da desorganização:
+            <h3 className="text-xl font-bold text-card-foreground mb-4">
+              A resposta sincera:
             </h3>
+            <p className="text-card-foreground/80 mb-2">
+              Muito menos do que o "Imposto TDAH" que você já paga todo mês.
+            </p>
+            <p className="text-card-foreground/80 mb-2">
+              Você provavelmente já está gastando dinheiro (e saúde) por não ter essa ajuda.
+            </p>
+            <p className="text-card-foreground/80 mb-4">
+              Coloque na ponta do lápis o custo do caos:
+            </p>
             {painCosts.map((cost, index) => (
               <motion.div
                 key={index}
@@ -51,14 +61,22 @@ const PriceAnchoringSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-start gap-3"
+                className="flex items-start gap-3 mb-2"
               >
                 <div className="x-icon flex-shrink-0 mt-1">
                   <X className="w-4 h-4" />
                 </div>
-                <p className="text-card-foreground/80">{cost.text}</p>
+                <p className="text-card-foreground/80">
+                  <strong className="text-primary">{cost.label}</strong> {cost.text}
+                </p>
               </motion.div>
             ))}
+            <p className="text-card-foreground/80 mt-4 mb-2">
+              Pare de pagar caro pelo caos.
+            </p>
+            <p className="text-card-foreground/80 font-semibold">
+              Invista menos de uma xícara de café diário no seu alívio.
+            </p>
           </motion.div>
 
           <motion.div
