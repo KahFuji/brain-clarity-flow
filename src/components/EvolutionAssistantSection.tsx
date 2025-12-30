@@ -84,15 +84,15 @@ const EvolutionAssistantSection = () => {
             className="pt-8"
           >
             <div className="relative inline-block group">
-              {/* Animated border effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-destructive to-primary rounded-xl opacity-75 blur-sm animate-spin-slow" />
+              {/* Subtle animated border effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary via-secondary/50 to-secondary rounded-xl opacity-50 blur-[2px] animate-spin-slow" />
               <motion.a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeWh2p5NW3OMSoM8NS-w2jFuADZxr4a-QGB1HVaBbZTGkcbQw/viewform?usp=send_form"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="relative btn-primary inline-block bg-black border border-primary/50"
+                className="relative px-8 py-4 text-lg font-bold rounded-xl bg-black text-foreground inline-block border border-secondary/30"
               >
                 Entre para a lista de espera
               </motion.a>
