@@ -49,7 +49,7 @@ const FounderHookSection = () => {
               whileTap={{ scale: 0.98 }}
               className="btn-primary animate-pulse"
             >
-              QUERO ME ORGANIZAR EM MINUTOS
+              ENTRE PARA A LISTA DE ESPERA
             </motion.button>
           </motion.div>
         </div>
