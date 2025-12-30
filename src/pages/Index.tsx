@@ -8,7 +8,7 @@ import TargetAudienceSection from "@/components/TargetAudienceSection";
 import FounderMovementSection from "@/components/FounderMovementSection";
 import PriceAnchoringSection from "@/components/PriceAnchoringSection";
 
-import FAQSection from "@/components/FAQSection";
+
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -34,7 +34,7 @@ const Index = () => {
         <FounderMovementSection />
         <PriceAnchoringSection />
         
-        <FAQSection />
+        
         <Footer />
       </main>
     </>
