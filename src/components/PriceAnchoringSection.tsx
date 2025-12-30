@@ -67,7 +67,7 @@ const PriceAnchoringSection = () => {
                   <X className="w-4 h-4" />
                 </div>
                 <p className="text-card-foreground/80">
-                  <strong className="text-primary">{cost.label}</strong> {cost.text}
+                  <strong className="text-card-foreground">{cost.label}</strong> {cost.text}
                 </p>
               </motion.div>
             ))}
