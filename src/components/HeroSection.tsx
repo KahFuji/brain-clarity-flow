@@ -37,26 +37,6 @@ const HeroSection = () => {
           <span className="text-secondary font-bold">RESGATE SEU POTENCIAL.</span>
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-12"
-        >
-          <div className="flex justify-center gap-2 flex-wrap">
-            {["Clareza", "Organização", "Paz Mental"].map((item, index) => (
-              <motion.span
-                key={item}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
-                className="px-4 py-2 rounded-full bg-muted text-secondary font-semibold text-sm"
-              >
-                {item}
-              </motion.span>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );
