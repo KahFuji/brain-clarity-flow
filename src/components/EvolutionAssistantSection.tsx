@@ -83,16 +83,16 @@ const EvolutionAssistantSection = () => {
             viewport={{ once: true }}
             className="pt-8"
           >
-            <div className="relative inline-block group">
-              {/* Subtle animated border effect */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary via-secondary/50 to-secondary rounded-xl opacity-50 blur-[2px] animate-spin-slow" />
+            <div className="relative inline-block p-[2px] rounded-xl overflow-hidden">
+              {/* Animated border - rotating gradient */}
+              <div className="absolute inset-0 bg-[conic-gradient(from_0deg,hsl(73_96%_46%)_0deg,transparent_60deg,transparent_300deg,hsl(73_96%_46%)_360deg)] animate-spin-slow" />
               <motion.a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeWh2p5NW3OMSoM8NS-w2jFuADZxr4a-QGB1HVaBbZTGkcbQw/viewform?usp=send_form"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="relative px-8 py-4 text-lg font-bold rounded-xl bg-black text-foreground inline-block border border-secondary/30"
+                className="relative px-8 py-4 text-lg font-bold rounded-xl bg-black text-foreground inline-block"
               >
                 Entre para a lista de espera
               </motion.a>
