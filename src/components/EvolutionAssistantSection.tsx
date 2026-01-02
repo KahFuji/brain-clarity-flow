@@ -44,7 +44,7 @@ const EvolutionAssistantSection = () => {
           </p>
 
           <p className="text-lg text-foreground font-semibold">
-            trazer dicas para liberar seu potencial
+            trazer dicas para liberar seu potencial.
           </p>
 
           <p className="text-lg text-foreground font-bold mt-6">
