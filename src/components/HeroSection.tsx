@@ -3,20 +3,24 @@ import logoImage from "@/assets/logo-desafoga-tdah.png";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-dark-section flex items-center justify-center px-4 py-20">
-      <div className="container max-w-4xl text-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-8"
-        >
-          <img
-            src={logoImage}
-            alt="Desafoga TDAH Logo"
-            className="mx-auto w-72 md:w-96 h-auto drop-shadow-2xl"
-          />
-        </motion.div>
+    <section className="min-h-screen bg-dark-section flex flex-col px-4 py-8">
+      {/* Logo no topo */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="mb-8"
+      >
+        <img
+          src={logoImage}
+          alt="Desafoga TDAH Logo"
+          className="mx-auto w-32 md:w-40 h-auto drop-shadow-xl"
+        />
+      </motion.div>
+
+      {/* Conteúdo centralizado */}
+      <div className="flex-1 flex items-center justify-center">
+        <div className="container max-w-4xl text-center">
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -37,6 +41,7 @@ const HeroSection = () => {
           <span className="text-secondary font-bold">RESGATE SEU POTENCIAL.</span>
         </motion.p>
 
+        </div>
       </div>
     </section>
   );
