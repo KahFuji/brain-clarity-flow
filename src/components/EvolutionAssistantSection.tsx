@@ -40,10 +40,6 @@ const EvolutionAssistantSection = () => {
           </p>
 
           <p className="text-lg text-muted-foreground">
-            ​
-          </p>
-
-          <p className="text-lg text-muted-foreground">
             Assim, você terá mais clareza sobre suas atividades e o Desafoga TDAH irá
           </p>
 
