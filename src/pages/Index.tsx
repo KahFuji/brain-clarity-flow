@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import HeroSection from "@/components/HeroSection";
-import FounderHookSection from "@/components/FounderHookSection";
 import ProblemSection from "@/components/ProblemSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import EvolutionAssistantSection from "@/components/EvolutionAssistantSection";
@@ -26,7 +25,6 @@ const Index = () => {
 
       <main className="overflow-hidden">
         <HeroSection />
-        <FounderHookSection />
         <ProblemSection />
         <HowItWorksSection />
         <EvolutionAssistantSection />
