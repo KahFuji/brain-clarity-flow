@@ -21,9 +21,6 @@ const FounderHookSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-green/20 to-transparent" />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary rounded-full flex items-center justify-center shadow-lg glow-lime">
-              <span className="text-3xl">💡</span>
-            </div>
           </motion.div>
 
           <motion.div
